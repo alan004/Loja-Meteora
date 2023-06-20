@@ -1,0 +1,13 @@
+.menu_itens-item {
+    display: inline;
+    padding: 0.25rem 2.5rem 0.25rem 0rem
+}
+
+.menu_itens-item:last-child {
+    padding: 0.25rem 0rem;
+}
+
+.menu_itens-item>a{
+    text-decoration: none;
+    color: var(--branco);
+}

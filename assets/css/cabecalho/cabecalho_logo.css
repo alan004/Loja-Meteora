@@ -1,0 +1,10 @@
+.cabecalho_logo{
+    background-image: url(../../img/Desktop/Logo\ desktop.png);
+    background-size: contain;
+    position: inherit;
+    background-repeat: no-repeat;
+    min-width: 132px;
+    min-height: 2rem;
+    display: inline-block;
+    margin-right: 2.5rem;
+}
