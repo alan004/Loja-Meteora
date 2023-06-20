@@ -1,0 +1,8 @@
+.categorias {
+    text-align: center;
+    font-family: var(--inter);
+    font-weight: 500;
+    color: #212529;;
+    font-size: 2rem;
+    padding: 3rem 0;
+}

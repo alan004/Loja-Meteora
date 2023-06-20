@@ -1,0 +1,13 @@
+.categorias__imagens {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 30px;
+    margin-top: 2rem;
+}
+
+.categorias__imagens>a{
+    text-decoration: none;
+    color: var(--branco);
+
+}
+

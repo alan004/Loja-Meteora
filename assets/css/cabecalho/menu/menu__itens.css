@@ -1,0 +1,23 @@
+.menu__itens {
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0;
+    font-family: var(--inter);
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.menu__itens.item {
+    display: inline;
+    padding: 0.25rem 2.5rem 0.25rem 0rem
+}
+
+.menu__itens.item:last-child {
+    padding: 0.25rem 0rem;
+}
+
+.menu__itens.item>a{
+    text-decoration: none;
+    color: var(--branco);
+}

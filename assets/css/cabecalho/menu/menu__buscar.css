@@ -1,0 +1,20 @@
+.menu__buscar {
+    font-family: var(--inter);
+    display: flex;
+}
+
+.menu__buscar.botao {
+    height: 38px;
+    box-sizing: border-box;
+    background-color: var(--preto);
+    color: var(--branco);
+    border: 1px solid var(--branco);
+    padding: 9px 12px;
+}
+
+.menu__buscar.pesquisar {
+    width: 170px;
+    height: 18px;
+    padding: .5rem 1rem;
+    margin-right: 1rem;
+}
