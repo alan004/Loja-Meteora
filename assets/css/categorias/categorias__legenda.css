@@ -1,6 +1,8 @@
 .categorias__legenda{
+    font-family: var(--inter);
     color: var(--branco);
     background-color: var(--preto);
     font-size: 1rem;
     padding: .5rem;
+    text-align: center;
 }

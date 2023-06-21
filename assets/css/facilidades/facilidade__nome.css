@@ -1,0 +1,5 @@
+.facilidade__nome{
+    font-weight: 700;
+    color: var(--verde);
+    text-transform: uppercase;
+}

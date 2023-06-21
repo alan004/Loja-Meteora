@@ -1,0 +1,5 @@
+.facilidade__icone{
+    grid-area: 1 / 1 / 3 / 2;
+    justify-self: end;
+    align-self: center;
+}

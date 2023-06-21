@@ -1,6 +1,6 @@
 .menu__buscar {
-    font-family: var(--inter);
     display: flex;
+    font-family: var(--inter);
 }
 
 .menu__buscar.botao {

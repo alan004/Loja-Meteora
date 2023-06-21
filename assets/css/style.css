@@ -11,7 +11,16 @@
 @import url(./carrossel.css);
 @import url(./carrossel/carrossel__banner.css);
 @import url(./conteudo.css);
+@import url(./conteudo/conteudo__titulos.css);
+
 @import url(./categorias.css);
 @import url(./categorias/categorias__card.css);
 @import url(./categorias/categorias__imagens.css);
 @import url(./categorias/categorias__legenda.css);
+
+@import url(./facilidades.css);
+@import url(./facilidades/facilidades__grade.css);
+@import url(./facilidades/facilidade__item.css);
+@import url(./facilidades/facilidade__icone.css);
+@import url(./facilidades/facilidade__nome.css);
+@import url(./facilidades/facilidade__descricao.css);
