@@ -18,6 +18,16 @@
 @import url(./categorias/categorias__imagens.css);
 @import url(./categorias/categorias__legenda.css);
 
+@import url(./produtos.css);
+@import url(./produtos/produtos__grade.css);
+@import url(./produtos/produtos__card.css);
+@import url(./produtos/produtos__card__detalhes.css);
+@import url(./produtos/produto__card__detalhes--nome.css);
+@import url(./produtos/produto__card__detalhes--descricao.css);
+@import url(./produtos/produto__card__detalhes--preco.css);
+@import url(./produtos/produto__card__detalhes--botao.css);
+
+
 @import url(./facilidades.css);
 @import url(./facilidades/facilidades__grade.css);
 @import url(./facilidades/facilidade__item.css);

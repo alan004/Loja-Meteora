@@ -1,0 +1,5 @@
+.produto__card__detalhes--nome{
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 12px 0 1rem;
+}
