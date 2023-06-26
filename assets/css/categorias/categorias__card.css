@@ -4,3 +4,32 @@
     margin-left: 0;
     margin-right: 0;
 }
+
+.categorias__card img{
+    display: none;
+}
+
+@media screen and (min-width: 0px) {
+    .categorias__card img:nth-of-type(1){
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .categorias__card img:nth-of-type(2){
+        display: block;
+    }
+    .categorias__card img:nth-of-type(1){
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .categorias__card img:nth-of-type(3){
+        display: block;
+    }
+    .categorias__card img:nth-of-type(2), .categorias__card img:nth-of-type(1){
+        display: none;
+    }
+}

@@ -1,8 +1,7 @@
 .carrossel__banner {
     min-width: 100%;
-    min-height: 415px;
     background-image: url(../../img/Desktop/Banner\ 1\ -\ Desktop.png);
     position:inherit;
-    margin-bottom: 1.5rem;
     background-size: cover;
+    min-height: 415px;
 }

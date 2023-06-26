@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     margin: 0;
+    color: var(--branco);
 }
 
 .menu__itens.item {
@@ -13,6 +14,9 @@
     padding: 0.25rem 2.5rem 0.25rem 0rem
 }
 
+.menu__itens.item:first-child{
+    margin-left: 2.5rem;
+}
 .menu__itens.item:last-child {
     padding: 0.25rem 0rem;
 }
@@ -20,4 +24,23 @@
 .menu__itens.item>a{
     text-decoration: none;
     color: var(--branco);
+}
+
+.menu__itens--mobile{
+    display:none
+}
+
+
+@media screen and (max-width:768px){
+    .menu__itens{
+        font-size: 13px;
+    }
+    .menu__itens.item {
+        display: inline;
+        padding: 0.25rem 1.25rem 0.25rem 0rem
+    }
+    .menu__itens.item:first-child{
+        margin-left: 1.25rem;
+    }
+
 }

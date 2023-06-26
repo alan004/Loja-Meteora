@@ -18,3 +18,14 @@
     padding: .5rem 1rem;
     margin-right: 1rem;
 }
+
+
+@media screen and (max-width:768px){
+    .menu__buscar {
+        font-size: 13px;
+    }
+    .menu__buscar.pesquisar{
+        padding: .44rem .60rem .69rem .4rem;
+        width: 145px;
+    }
+}

@@ -1,7 +1,23 @@
 .produtos__grade {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    margin-top: 30px;
     gap: 30px;
-    margin-top: 3rem;
+}
+
+@media screen and (min-width: 375px){
+    .produtos__grade{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px){
+    .produtos__grade{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width:  1280px){
+    .produtos__grade{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

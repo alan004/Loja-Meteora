@@ -1,9 +1,30 @@
 .facilidades__grade {
     display: grid;
-    grid-template-columns: auto auto auto;
     margin-top: 2.5rem;
-    padding: 0 10rem;
     padding: auto;
-    gap: 2.5rem;
+    gap: 2rem;
+}
 
+
+@media screen and (min-width: 375px){
+    .facilidades__grade{
+        grid-template-rows: auto auto auto;
+        padding: 0 1rem;
+        justify-content: start;
+        
+    }
+}
+
+@media screen and (min-width: 768px){
+    .facilidades__grade{
+        padding: 0 10rem;
+        justify-content: center;
+
+    }
+}
+
+@media screen and (min-width:  1280px){
+    .facilidades__grade{
+        grid-template-columns: auto auto auto;
+    }
 }
