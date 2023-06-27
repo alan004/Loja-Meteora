@@ -4,12 +4,13 @@
 
 .menu__botao:checked~.menu__itens{
     display: inline-flex;
+    align-items: stretch;
 }
 
 .menu__botao:checked + label .menu__itens--mobile{
     z-index: 1;
     position: absolute;
-    top: 14px;
+    top: 1.5rem;
     right: 1.5rem;
     background-image: url(../../../img/X.svg);
     background-repeat: no-repeat;
