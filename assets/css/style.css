@@ -2,8 +2,10 @@
 @import url(./root.css);
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
+
 @import url(./cabecalho.css);
 @import url(./cabecalho/cabecalho__logo.css);
+@import url(./cabecalho/menu/menu__botao.css);
 @import url(./cabecalho/menu/menu__itens.css);
 @import url(./cabecalho/menu/menu__itens__item.css);
 @import url(./cabecalho/menu/menu__buscar.css);

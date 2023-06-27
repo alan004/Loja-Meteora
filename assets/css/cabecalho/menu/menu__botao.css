@@ -1,0 +1,16 @@
+.menu__botao {
+    display: none;
+} 
+
+.menu__botao:checked~.menu__itens{
+    display: inline-flex;
+}
+
+.menu__botao:checked + label .menu__itens--mobile{
+    z-index: 1;
+    position: absolute;
+    top: 14px;
+    right: 1.5rem;
+    background-image: url(../../../img/X.svg);
+    background-repeat: no-repeat;
+}

@@ -5,10 +5,36 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
+
+.cabecalho>.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: inherit;
+}
+
 
 @media screen and (max-width:768px){
     .cabecalho{
         padding: 0.44rem 1.5rem;
+        flex-direction: column;
     }
+    .cabecalho>.container{
+        width: 100%;
+        justify-content: space-between;
+        
+    }
+}
+
+@media screen and (min-width:768px){
+    .cabecalho{
+        flex-direction: row;
+    }
+    .cabecalho>.container {
+        justify-content: flex-start;
+    }
+
 }
