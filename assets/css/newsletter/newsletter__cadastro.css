@@ -1,0 +1,23 @@
+.newsletter__cadastro {
+    display: flex;
+    justify-content: space-between;
+    height: 38px;
+    align-items: center;
+}
+
+.newsletter__cadastro--botao{
+    height: 38px;
+}
+
+.newsletter__cadastro--email{
+    align-self: stretch;
+    width: 100%;
+    padding: 0.44rem 0.44rem .5rem 0.94rem;
+}
+
+@media screen and (min-width: 768px) {
+    .newsletter__cadastro{
+        justify-content: space-around;
+        margin: 0 10%;
+    }
+}

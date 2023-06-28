@@ -1,0 +1,31 @@
+.newsletter{
+    box-sizing: border-box;
+    border: 1px solid var(--preto);
+    margin: 2rem 1.63rem;
+    padding: 1.5rem;
+    font-family: var(--inter);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem ;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .newsletter{ 
+        margin:  2.5rem 1.7rem;
+        padding: 2.5rem 3rem;
+        font-size: 1.25rem;
+    }
+    .newsletter>p{
+       padding: 0 20px;
+    }
+}
+
+@media screen and (min-width:  1280px){
+    .newsletter{
+        margin: 4.09rem 18rem;
+    }
+    .newsletter>p{
+        padding: 0;
+     }
+}
