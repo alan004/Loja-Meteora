@@ -1,0 +1,20 @@
+.rodape{
+    font-family: var(--inter);
+    background-color: var(--preto);
+    font-size: 13px ;
+    padding: 1.06rem;
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+} 
+
+.rodape>p{
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .rodape>p{
+        max-width: 240px;
+
+    }
+}
