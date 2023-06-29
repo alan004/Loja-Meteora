@@ -1,0 +1,52 @@
+.carrossel__imagem {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    position: inherit;
+    min-height: 415px;
+}
+.swiper-button-next, .swiper-button-prev{
+    opacity: -1;
+}
+
+.carrossel__imagem--1{
+    background-image: url(../img/Mobile/Banner\ carousel\ 1\ _\ 375.png);  
+}
+.carrossel__imagem--2{
+    background-image: url(../img/Mobile/Banner\ carousel\ 2\ _\ 375.png);
+}
+.carrossel__imagem--3{
+    background-image: url(../img/Mobile/Banner\ carousel\ 3\ _\ 375.png);
+}
+
+@media (width >= 768px) {
+    .carrossel__imagem--1{
+        background-image: url(../img/Tablet/Banner\ carousel\ 1\ _\ 768.png);  
+    }  
+    .carrossel__imagem--2{
+        background-image: url(../img/Tablet/Banner\ carousel\ 2\ _\ 768.png);
+    }
+    .carrossel__imagem--3{
+        background-image: url(../img/Tablet/Banner\ carousel\ 3\ _\ 768.png);
+    }
+}
+
+@media (width >= 1280px) {
+    .carrossel__imagem{
+        min-height: 389px
+    }
+    .carrossel__imagem--1{
+        background-image: url(../img/Desktop/Banner\ carousel\ 1\ _\ 1440.png);  
+    }  
+    .carrossel__imagem--2{
+        background-image: url(../img/Desktop/Banner\ carousel\ 2\ _\ 1440.png);
+    }
+    .carrossel__imagem--3{
+        background-image: url(../img/Desktop/Banner\ carousel\ 3\ _\ 1440.png);
+    }
+}
+@media (width >= 1440px) {
+    .carrossel__imagem{
+        min-height: 415px
+    }
+}

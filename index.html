@@ -30,8 +30,24 @@
         </div>
     </header>
     <section class="carrossel">
-        <div class="carrossel__banner">
-        </div>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide carrossel__imagem carrossel__imagem--1"></div>
+              <div class="swiper-slide carrossel__imagem carrossel__imagem--2"></div>
+              <div class="swiper-slide carrossel__imagem carrossel__imagem--3"></div>
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
     </section>
     <main class="conteudo">
         <section class="categorias">
@@ -192,5 +208,7 @@
     <footer class="rodape">
         <p>2023 © Desenvolvido por Alan Abilio | Projeto fictício sem fins comerciais.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 </html>
