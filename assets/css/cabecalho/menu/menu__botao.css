@@ -8,7 +8,7 @@
 }
 
 .menu__botao:checked + label .menu__itens--mobile{
-    z-index: 1;
+    z-index: 3;
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;

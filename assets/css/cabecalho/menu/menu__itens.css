@@ -39,10 +39,11 @@
         gap: .5rem;
         right: 0px;
         top: 0px;
-        padding: 42px 24px;
+        padding: 42px 24px 1rem;
         align-items: flex-start;
         flex-direction: column;
         background-color: var(--cor--menu);
+        z-index: 2;
         
     }
     .menu__itens{

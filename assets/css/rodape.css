@@ -15,6 +15,6 @@
 @media screen and (max-width: 767px) {
     .rodape>p{
         max-width: 240px;
-
+        line-height: 1.25rem;
     }
 }
