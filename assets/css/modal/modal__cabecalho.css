@@ -1,0 +1,15 @@
+.modal__cabecalho {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    background-color: var(--preto);
+    padding: 1.12rem 28px 1.12rem 60px;
+    justify-content: space-between;
+    align-items:center;
+}
+
+@media (width >= 768px) {
+    .modal__cabecalho{
+    padding: 1.12rem 28px 1.12rem 70px;
+    }
+}

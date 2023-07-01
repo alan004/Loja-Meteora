@@ -1,0 +1,11 @@
+.modal__botao{
+    border: none;
+    background-image: url(../../img/X\ Icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    border: none;
+    justify-self: flex-end;
+}

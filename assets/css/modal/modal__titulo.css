@@ -1,0 +1,28 @@
+.modal__titulo{
+    width: 100%;
+    color: var(--branco);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--inter);
+    text-align: left;
+    position: relative;
+    max-width: 211px;
+}
+
+.modal__titulo::before{
+    content: url(../../img/check-circle.svg);
+    position: absolute;
+    left: -3rem;
+    text-align: left;
+}
+
+@media (width >= 768px) {
+    .modal__titulo{
+        max-width: 100%;
+    }
+    .modal__titulo::before{
+        top: -0.5rem;
+        left: -3rem;
+        text-align: left;
+    }
+}

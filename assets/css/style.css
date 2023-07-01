@@ -20,6 +20,13 @@
 @import url(./conteudo.css);
 @import url(./conteudo/conteudo__titulos.css);
 
+@import url(./modal.css);
+@import url(./modal/modal__cabecalho.css);
+@import url(./modal/modal__titulo.css);
+@import url(./modal/modal__botao.css);
+@import url(./modal/modal__descricao.css);
+
+
 @import url(./categorias.css);
 @import url(./categorias/categorias__card.css);
 @import url(./categorias/categorias__imagens.css);

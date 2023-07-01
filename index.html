@@ -197,7 +197,14 @@
         <p>Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</p>
         <div class="newsletter__cadastro">
             <input type="text" class="newsletter__cadastro--email" placeholder="Digite seu email">
-            <button class="newsletter__cadastro--botao botao">Enviar</button>
+            <button class="newsletter__cadastro--botao botao open">Enviar</button>
+            <dialog class="modal">
+                <div class="modal__cabecalho">
+                    <p class="modal__titulo">E-mail cadastrado com sucesso!</p>
+                    <button class="modal__botao close"></button>
+                </div>
+                <p class="modal__descricao">Em breve você receberá novidades exclusivas da Meteora.</p>
+            </dialog>
         </div>
     </section>
     <footer class="rodape">
@@ -205,5 +212,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
