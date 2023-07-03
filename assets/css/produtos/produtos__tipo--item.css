@@ -1,0 +1,12 @@
+.produtos__tipo--item{
+    display: flex;
+    flex-direction: row;
+    justify-items: stretch;
+    gap: 1rem;
+}
+
+.produtos__tipo--item--selecao {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: .5rem
+  }

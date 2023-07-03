@@ -6,3 +6,12 @@
     border: 1px solid var(--cinza);
     border-top: 0;
 }
+
+.produtos__card__detalhes.produtos__modal{
+    gap:1.5rem;
+    padding-bottom: 0;
+}
+
+.produtos__card__detalhes.produtos__modal>.produto__card__detalhes--preco{
+    margin: 0;
+}
