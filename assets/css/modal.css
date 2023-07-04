@@ -1,16 +1,23 @@
-.modal{
+.modal, .modal--produto{
     padding: 0;
     border: 0;
     border-radius: 0.25rem;
     background: #FFF;
     box-shadow: 0px 4px 15px 0px rgba(44, 63, 88, 0.35);
 }
-.modal::backdrop {
+.modal::backdrop, .modal--produto::backdrop {
     background: rgba(0, 0, 0, .7);
   }
 
 @media (width >= 768px) {
     .modal{
         width: 100%;
+    }
+    .modal__descricao.produto{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .modal--produto{
+        max-width: 668px;
     }
 }

@@ -15,3 +15,9 @@
 .produtos__card__detalhes.produtos__modal>.produto__card__detalhes--preco{
     margin: 0;
 }
+
+@media (width >= 768px) {
+    .produtos__card__detalhes.produtos__modal{
+        border:none;
+    }
+}

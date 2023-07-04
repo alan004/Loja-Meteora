@@ -41,6 +41,7 @@
 @import url(./produtos/produto__card__detalhes--descricao.css);
 @import url(./produtos/produto__card__detalhes--preco.css);
 @import url(./produtos/produto__card__detalhes--botao.css);
+@import url(./produtos/produto__modal--foto.css);
 @import url(./produtos/produtos__tipo.css);
 @import url(./produtos/produtos__tipo--item.css);
 @import url(./produtos/produtos__tipo--sacola.css);
