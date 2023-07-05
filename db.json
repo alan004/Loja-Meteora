@@ -1,0 +1,82 @@
+{
+    "Produtos": [
+        {
+            "id": 1,
+            "nome":"Camiseta Conforto",
+            "descricao":"Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
+            "preco":"R$ 70,00",
+            "tamanhos": ["p", "pp", "m", "g", "gg"],
+            "cores":["azul"],
+            "loja":"Riachuelo",
+            "categoria": "camisetas",
+            "imgMobile":"./assets/img/Mobile/Imagens cards/Card camiseta.png",
+            "imgTablet":"./assets/img/Tablet/Imagens Cards/camiseta.png",
+            "imgDesktop":"./assets/img/Desktop/Imagens Cards/Camiseta.png"
+        },
+        {
+            "id": 2,
+            "nome":"Calça Alfaiataria",
+            "descricao":"Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
+            "preco":"R$ 180,00",
+            "tamanhos": ["p", "pp", "m", "g", "gg"],
+            "cores":["azul"],
+            "loja":"Riachuelo",
+            "categoria": "calças",
+            "imgMobile":"./assets/img/Mobile/Imagens cards/Card calça.png",
+            "imgTablet":"./assets/img/Tablet/Imagens Cards/calça.png",
+            "imgDesktop":"./assets/img/Desktop/Imagens Cards/Calça.png"
+        },
+        {
+            "id": 3,
+            "nome":"Tênis Chunky",
+            "descricao":"Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
+            "preco":"R$ 250,00",
+            "tamanhos": ["p", "pp", "m", "g", "gg"],
+            "cores":["azul"],
+            "loja":"Riachuelo",
+            "categoria": "tenis",
+            "imgMobile":"./assets/img/Mobile/Imagens cards/Card tenis.png",
+            "imgTablet":"./assets/img/Tablet/Imagens Cards/tenis.png",
+            "imgDesktop":"./assets/img/Desktop/Imagens Cards/Tenis.png"
+        },
+        {
+            "id": 4,
+            "nome":"Jaqueta Jeans",
+            "descricao":"Modelo unissex oversized com gola de camurça. Atemporal e autêntica",
+            "preco":"R$ 150,00",
+            "tamanhos": ["p", "pp", "m", "g", "gg"],
+            "cores":["azul"],
+            "loja":"Riachuelo",
+            "categoria": "casacos",
+            "imgMobile":"./assets/img/Mobile/Imagens cards/Card jaqueta jeans.png",
+            "imgTablet":"./assets/img/Tablet/Imagens Cards/jaqueta jeans.png",
+            "imgDesktop":"./assets/img/Desktop/Imagens Cards/Jaqueta.png"
+        },
+        {
+            "id": 5,
+            "nome":"Óculos Redondo",
+            "descricao":"Armação metálica em grafite com lentes arredondadas. Sem erro!",
+            "preco":"R$ 120,00",
+            "tamanhos": ["p", "pp", "m", "g", "gg"],
+            "cores":["azul"],
+            "loja":"Riachuelo",
+            "categoria": "óculos",
+            "imgMobile":"./assets/img/Mobile/Imagens cards/Cards óculos.png",
+            "imgTablet":"./assets/img/Tablet/Imagens Cards/óculos.png",
+            "imgDesktop":"./assets/img/Desktop/Imagens Cards/óculos.png"
+        },
+        {
+            "id": 6,
+            "nome":"Bolsa Coringa",
+            "descricao":"Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
+            "preco":"R$ 120,00",
+            "tamanhos": ["p", "pp", "m", "g", "gg"],
+            "cores":["azul"],
+            "loja":"Riachuelo",
+            "categoria": "bolsas",
+            "imgMobile":"./assets/img/Mobile/Imagens cards/Card bolsa.png",
+            "imgTablet":"./assets/img/Tablet/Imagens Cards/bolsa.png",
+            "imgDesktop":"./assets/img/Desktop/Imagens Cards/Bolsa.png"
+        }
+    ]
+}
