@@ -11,13 +11,9 @@
 @import url(./cabecalho/cabecalho__logo.css);
 @import url(./cabecalho/menu/menu__botao.css);
 @import url(./cabecalho/menu/menu__itens.css);
-@import url(./cabecalho/menu/menu__itens__item.css);
 @import url(./cabecalho/menu/menu__buscar.css);
-@import url(./cabecalho/menu/menu__buscar__pesquisar.css);
-@import url(./cabecalho/menu/menu__buscar__botao.css);
 @import url(./carrossel.css);
 
-@import url(./carrossel/carrossel__banner.css);
 @import url(./conteudo.css);
 @import url(./conteudo/conteudo__titulos.css);
 
@@ -40,7 +36,6 @@
 @import url(./produtos/produto__card__detalhes--nome.css);
 @import url(./produtos/produto__card__detalhes--descricao.css);
 @import url(./produtos/produto__card__detalhes--preco.css);
-@import url(./produtos/produto__card__detalhes--botao.css);
 @import url(./produtos/produto__modal--foto.css);
 @import url(./produtos/produtos__tipo.css);
 @import url(./produtos/produtos__tipo--item.css);

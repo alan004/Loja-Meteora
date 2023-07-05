@@ -8,5 +8,6 @@
 .produtos__tipo--item--selecao {
     display: flex;
     flex-direction: column-reverse;
-    gap: .5rem
+    gap: .5rem;
+    align-items: center;
   }
