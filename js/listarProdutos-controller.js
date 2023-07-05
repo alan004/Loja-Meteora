@@ -17,7 +17,7 @@ const criarNovoProduto = (id, nome, descricao, preco, imgMobile, imgTablet, imgD
             
 
     const conteudoModal = `
-    <dialog id="modal--produto" class"modal--produto">
+    <dialog class="modal--produto">
     <div class="modal__cabecalho">
     <p class="modal__titulo">Confira detalhes sobre o produto</p>
     <button class="modal__botao close--produto"></button>
