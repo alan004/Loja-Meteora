@@ -3,11 +3,16 @@
     flex-direction: row;
     justify-items: stretch;
     gap: 1rem;
+    text-transform: capitalize;
 }
+.produtos__tipo--item.tamanho{
+    text-transform: uppercase;
+}
+
 
 .produtos__tipo--item--selecao {
     display: flex;
     flex-direction: column-reverse;
     gap: .5rem;
     align-items: center;
-  }
+}

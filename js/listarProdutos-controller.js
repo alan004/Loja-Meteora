@@ -1,7 +1,23 @@
 import { clientService } from "./client-service.js";
 import { exibirModalProduto} from "./modal.js";
 
-const criarNovoProduto = (id, nome, descricao, preco, imgMobile, imgTablet, imgDesktop, loja) => {
+function obterCoresTamanhos (cores, tamanhos) {
+    let coresProduto = ""
+    let tamanhosProduto = ""
+
+    for (let index = 0; index < tamanhos.length; index++) {
+        const item = tamanhos[index]
+        tamanhosProduto += `<div class="produtos__tipo--item--selecao"><label for="${item}">${item}</label><input name="tamanho" id="${item}" type="radio"></div>`
+        }
+
+    for (let index = 0; index < cores.length; index++) {
+        const item = cores[index]
+        coresProduto += `<div class="produtos__tipo--item--selecao"><label for="${item}">${item}</label><input name="cor" id="${item}" type="radio"></div>`
+        }
+    return { coresProduto, tamanhosProduto }
+}
+
+const criarNovoProduto = (id, nome, descricao, preco, imgMobile, imgTablet, imgDesktop, loja, cores, tamanhos) => {
     const cardProduto = document.createElement('div')
     cardProduto.classList.add("produtos__card")
     const conteudoProduto = `
@@ -13,9 +29,8 @@ const criarNovoProduto = (id, nome, descricao, preco, imgMobile, imgTablet, imgD
             <p class="produto__card__detalhes--descricao">${descricao}</p>
             <p class="produto__card__detalhes--preco">${preco}</p>
             <button class="produto__card__detalhes botao open--produto">Ver mais</button>
-            `
-            
-
+            `          
+    const { coresProduto, tamanhosProduto } = obterCoresTamanhos(cores, tamanhos)
     const conteudoModal = `
     <dialog class="modal--produto">
     <div class="modal__cabecalho">
@@ -37,19 +52,13 @@ const criarNovoProduto = (id, nome, descricao, preco, imgMobile, imgTablet, imgD
             <p class="produto__card__detalhes--entrega">Vendido e entregue por ${loja}</p>
             <hr class="separador">
             <p>Cores:</p>
-            <div class="produtos__tipo--item">
-            <div class="produtos__tipo--item--selecao"><label for="amarela">Amarela</label><input name="cor" id="amartela" type="radio"></div>
-            <div class="produtos__tipo--item--selecao"><label for="azul">Azul</label><input name="cor" id="azul" type="radio"></div>
-            <div class="produtos__tipo--item--selecao"><label for="preta">Preta</label><input name="cor" id="preta" type="radio"></div>
+            <div class="produtos__tipo--item cores">
+            ${coresProduto}
             </div>
             <hr class="separador">
             <p>Tamanho:</p>
-            <div class="produtos__tipo--item">
-            <div class="produtos__tipo--item--selecao"><label for="pp">PP</label><input name="tamanho" id="pp" type="radio"></div>
-            <div class="produtos__tipo--item--selecao"><label for="p">P</label><input name="tamanho" id="p" type="radio"></div>
-            <div class="produtos__tipo--item--selecao"><label for="m">M</label><input name="tamanho" id="m" type="radio"></div>
-            <div class="produtos__tipo--item--selecao"><label for="g">G</label><input name="tamanho" id="g" type="radio"></div>
-            <div class="produtos__tipo--item--selecao"><label for="gg">GG</label><input name="tamanho" id="gg" type="radio"></div>
+            <div class="produtos__tipo--item tamanho">
+            ${tamanhosProduto}
             </div>
             <a class="botao produtos__btn--sacola">Adicionar à sacola</a>
                 </form>
@@ -68,11 +77,12 @@ export const renderProdutos = async () => {
     try {
         const listarProdutos = await clientService.listarProdutos()
         listarProdutos.forEach(e => {
-        const novoProduto = criarNovoProduto(e.id, e.nome, e.descricao, e.preco, e.imgMobile, e.imgTablet, e.imgDesktop, e.loja)
-        gradeProdutos.appendChild(novoProduto)    
+        const lojaVenda = e.loja.charAt(0).toUpperCase() + e.loja.slice(1)
+        const novoProduto = criarNovoProduto(e.id, e.nome, e.descricao, e.preco, e.imgMobile, e.imgTablet, e.imgDesktop, lojaVenda, e.cores, e.tamanhos)
+        gradeProdutos.appendChild(novoProduto)
         exibirModalProduto(novoProduto)
         })}
     catch(erro){
-        console.log("erro")
+        console.log(erro)
     }
 }
