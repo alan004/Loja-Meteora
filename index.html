@@ -235,9 +235,9 @@
     </main>
     <section class="newsletter">
         <p>Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</p>
-        <div class="newsletter__cadastro">
-            <input type="text" class="newsletter__cadastro--email" placeholder="Digite seu email">
-            <button class="newsletter__cadastro--botao botao open">Enviar</button>
+        <form class="newsletter__cadastro" data-newsletter>
+            <input type="text" class="newsletter__cadastro--email" required placeholder="Digite seu email" pattern="^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$">
+            <button type="" class="newsletter__cadastro--botao botao open">Enviar</button>
             <dialog class="modal">
                 <div class="modal__cabecalho">
                     <p class="modal__titulo">E-mail cadastrado com sucesso!</p>
@@ -245,13 +245,12 @@
                 </div>
                 <p class="modal__descricao">Em breve você receberá novidades exclusivas da Meteora.</p>
             </dialog>
-        </div>
+        </form>
     </section>
     <footer class="rodape">
         <p>2023 © Desenvolvido por Alan Abilio | Projeto fictício sem fins comerciais.</p>
     </footer>
     <script src="./js/app.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>  
-    <script src="./js/modal.js"></script>
 </body>
 </html>

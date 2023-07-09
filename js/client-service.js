@@ -8,6 +8,24 @@ const listarProdutos = () => {
     })
 }
 
+const adicionarEmail = (email) =>{
+    return fetch(`http://localhost:3000/EmailsLista`,{
+        method: 'POST',
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(
+            {email: email}
+        )})
+        .then((e) => {
+            if(e.ok){
+                return e.body
+            }
+            throw new Error ('Não foi possível cadastrar o email')
+        })
+}
+
 export const clientService = {
-    listarProdutos
+    listarProdutos,
+    adicionarEmail
 }
