@@ -1,12 +1,15 @@
 import { clientService } from "./client-service.js"
 
+
 export function cadastrarEmailNewsletter(){
+    const inputEmail = document.querySelector(".newsletter__cadastro--email")
     const modal = document.querySelector(".modal")
     const openModalBtn = document.querySelector(".open")
     const closeModalBtn = document.querySelector(".close");
     openModalBtn.addEventListener("click", (e) =>{ 
-    e.preventDefault()
-    modal.showModal()}
+        if (inputEmail.validity.valid == true){
+        e.preventDefault()
+        modal.showModal()}}
 )
     closeModalBtn.addEventListener("click", async () => {
         modal.close();
