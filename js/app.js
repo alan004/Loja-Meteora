@@ -3,6 +3,7 @@ import { clientService } from "./client-service.js";
 import { exibirProdutos } from "./listarProdutos-controller.js";
 import { cadastrarEmailNewsletter } from "./newsletter-controller.js";
 import { filtrarCategoria } from "./filtrarProdutos-controller.js";
+import { buscarProduto } from "./buscarProduto-controller.js";
 
 
 

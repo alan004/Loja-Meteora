@@ -71,7 +71,7 @@ const criarNovoProduto = (id, nome, descricao, preco, imgMobile, imgTablet, imgD
     return cardProduto
 }
 
-const gradeProdutos = document.querySelector(".produtos__grade")
+export const gradeProdutos = document.querySelector(".produtos__grade")
 
 export function exibirProdutos(produtos){
         gradeProdutos.innerHTML = ''
