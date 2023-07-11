@@ -18,7 +18,7 @@
         "amarela"
       ],
       "loja": "Riachuelo",
-      "categoria": "camisetas",
+      "categoria": "Camisetas",
       "imgMobile": "./assets/img/Mobile/Imagens cards/Card camiseta.png",
       "imgTablet": "./assets/img/Tablet/Imagens Cards/camiseta.png",
       "imgDesktop": "./assets/img/Desktop/Imagens Cards/Camiseta.png"
@@ -39,7 +39,7 @@
         "bege"
       ],
       "loja": "Riachuelo",
-      "categoria": "calças",
+      "categoria": "Calças",
       "imgMobile": "./assets/img/Mobile/Imagens cards/Card calça.png",
       "imgTablet": "./assets/img/Tablet/Imagens Cards/calça.png",
       "imgDesktop": "./assets/img/Desktop/Imagens Cards/Calça.png"
@@ -60,7 +60,7 @@
         "azul"
       ],
       "loja": "Dafiti",
-      "categoria": "tenis",
+      "categoria": "Calçados",
       "imgMobile": "./assets/img/Mobile/Imagens cards/Card tenis.png",
       "imgTablet": "./assets/img/Tablet/Imagens Cards/tenis.png",
       "imgDesktop": "./assets/img/Desktop/Imagens Cards/Tenis.png"
@@ -79,7 +79,7 @@
         "azul"
       ],
       "loja": "Riachuelo",
-      "categoria": "casacos",
+      "categoria": "Casacos",
       "imgMobile": "./assets/img/Mobile/Imagens cards/Card jaqueta jeans.png",
       "imgTablet": "./assets/img/Tablet/Imagens Cards/jaqueta jeans.png",
       "imgDesktop": "./assets/img/Desktop/Imagens Cards/Jaqueta.png"
@@ -99,7 +99,7 @@
         "azul"
       ],
       "loja": "Óticas Diniz",
-      "categoria": "óculos",
+      "categoria": "Óculos",
       "imgMobile": "./assets/img/Mobile/Imagens cards/Cards óculos.png",
       "imgTablet": "./assets/img/Tablet/Imagens Cards/óculos.png",
       "imgDesktop": "./assets/img/Desktop/Imagens Cards/óculos.png"
@@ -122,13 +122,13 @@
         "lilás"
       ],
       "loja": "kipling",
-      "categoria": "bolsas",
+      "categoria": "Bolsas",
       "imgMobile": "./assets/img/Mobile/Imagens cards/Card bolsa.png",
       "imgTablet": "./assets/img/Tablet/Imagens Cards/bolsa.png",
       "imgDesktop": "./assets/img/Desktop/Imagens Cards/Bolsa.png"
     }
   ],
   "EmailsLista": [
-    
+
   ]
 }

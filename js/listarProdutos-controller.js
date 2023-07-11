@@ -73,16 +73,12 @@ const criarNovoProduto = (id, nome, descricao, preco, imgMobile, imgTablet, imgD
 
 const gradeProdutos = document.querySelector(".produtos__grade")
 
-export const renderProdutos = async () => {
-    try {
-        const listarProdutos = await clientService.listarProdutos()
-        listarProdutos.forEach(e => {
+export function exibirProdutos(produtos){
+        gradeProdutos.innerHTML = ''
+        produtos.forEach(e => {
         const lojaVenda = e.loja.charAt(0).toUpperCase() + e.loja.slice(1)
         const novoProduto = criarNovoProduto(e.id, e.nome, e.descricao, e.preco, e.imgMobile, e.imgTablet, e.imgDesktop, lojaVenda, e.cores, e.tamanhos)
         gradeProdutos.appendChild(novoProduto)
         exibirModalProduto(novoProduto)
-        })}
-    catch(erro){
-        console.log(erro)
-    }
+    })
 }

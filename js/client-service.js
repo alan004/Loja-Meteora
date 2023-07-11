@@ -1,15 +1,18 @@
+const enderecoAPI = 'http://localhost:3000/'
+
 const listarProdutos = () => {
-    return fetch(`http://localhost:3000/Produtos`)
+    return fetch(enderecoAPI + `Produtos`)
     .then (e => {
         if(e.ok){
-            return e.json()
+            const produtos = e.json()
+            return produtos
         }
         throw new Error('Não foi possível listar os produtos')
     })
 }
 
 const adicionarEmail = (email) =>{
-    return fetch(`http://localhost:3000/EmailsLista`,{
+    return fetch(enderecoAPI + `EmailsLista`,{
         method: 'POST',
         headers:{
             'Content-Type': 'application/json'
