@@ -10,12 +10,14 @@ function filtrar() {
 
 export async function filtrarCategoria(evento){
         evento.preventDefault()
+        const secaoCategorias = document.querySelector('.categorias')
         const categoriaBtn = this.innerText
         const produtosFiltrados = []
         const produtos = await clientService.listarProdutos()
         const categoriaSelecionada = categoriaBtn
         let produtosCategorias = produtos.filter(e=> e.categoria == categoriaSelecionada)
         produtosFiltrados.push(...produtosCategorias)
+        secaoCategorias.scrollIntoView({ behavior: 'smooth' })
         exibirProdutos(produtosFiltrados)
 }
 

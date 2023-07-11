@@ -8,6 +8,8 @@ export async function buscarProduto(){
         const barraPesquisa = document.querySelector('.menu__buscar.pesquisar')
         const conteudoPesquisado = barraPesquisa.value.toLowerCase()
         const produtos = await clientService.listarProdutos()
+        const secaoProdutos = document.querySelector('.produtos')
+
         if (conteudoPesquisado === '' ){
             exibirProdutos(produtos)
         }
@@ -16,6 +18,7 @@ export async function buscarProduto(){
             Object.values(produto).some((e) =>
                 String(e).toLocaleLowerCase().includes(conteudoPesquisado)
             ))
+            secaoProdutos.scrollIntoView({ behavior: 'smooth' })
             if (produtosPesquisados.length >= 1){
                 limparMensagemErro()
                 exibirProdutos(produtosPesquisados)
@@ -35,7 +38,7 @@ function limparMensagemErro(){
 
 function mostrarMensagemErro(termo){
     const busca = termo
-    const mensagem = "Desculpe, sua busca por " + busca + " não encontrou nenhum resultado :("
+    const mensagem = 'Desculpe, sua busca por "' + busca + '" não encontrou nenhum resultado :('
     const paragrafo = document.querySelector('.produtos').querySelector('.conteudo__titulos') 
     paragrafo.innerText = mensagem
 }
