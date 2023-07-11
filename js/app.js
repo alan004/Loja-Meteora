@@ -10,6 +10,13 @@ import { buscarProduto } from "./buscarProduto-controller.js";
 cadastrarEmailNewsletter()
 renderProdutos()
 
+const btnHome = document.getElementById('home')
+btnHome.addEventListener('click', async () => {
+    const produtos = await clientService.listarProdutos()
+    exibirProdutos(produtos)
+})
+
+
 export async function renderProdutos(){
     try {
         const produtos = await clientService.listarProdutos()

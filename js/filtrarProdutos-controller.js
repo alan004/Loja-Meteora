@@ -8,7 +8,8 @@ function filtrar() {
 }
 
 
-export async function filtrarCategoria(){
+export async function filtrarCategoria(evento){
+        evento.preventDefault()
         const categoriaBtn = this.innerText
         const produtosFiltrados = []
         const produtos = await clientService.listarProdutos()
