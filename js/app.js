@@ -1,9 +1,9 @@
 import { swiper } from "./slider.js";
 import { clientService } from "./client-service.js";
-import { exibirProdutos } from "./listarProdutos-controller.js";
+import { exibirProdutos } from "./produtos/listarProdutos-controller.js";
 import { cadastrarEmailNewsletter } from "./newsletter-controller.js";
-import { filtrarCategoria } from "./filtrarProdutos-controller.js";
-import { buscarProduto } from "./buscarProduto-controller.js";
+import { filtrarCategoria } from "./produtos/filtrarProdutos-controller.js";
+import { buscarProduto } from "./produtos/buscarProduto-controller.js";
 
 
 

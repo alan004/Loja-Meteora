@@ -1,5 +1,5 @@
-import { clientService } from "./client-service.js"
-import { exibirModalProduto} from "./modal.js"
+import { clientService } from "../client-service.js"
+import { exibirModalProduto} from "../modal.js"
 
 function obterCoresTamanhos (cores, tamanhos) {
     let coresProduto = ""

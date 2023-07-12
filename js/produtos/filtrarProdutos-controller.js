@@ -1,4 +1,4 @@
-import { clientService } from "./client-service.js"
+import { clientService } from "../client-service.js"
 import { exibirProdutos } from "./listarProdutos-controller.js"
 
 const botoes = document.querySelectorAll('.categorias__card')

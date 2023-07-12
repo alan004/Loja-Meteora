@@ -1,4 +1,4 @@
-import { clientService } from "./client-service.js"
+import { clientService } from "../client-service.js"
 import { exibirProdutos, gradeProdutos } from "./listarProdutos-controller.js"
 
 const pesquisar = document.querySelector('.menu__buscar.container_1')
