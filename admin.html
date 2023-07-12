@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Meteora</title>
+    <link rel="shortcut icon" href="./assets/img/Favicon-64px.png" />
+</head>
+<link rel="stylesheet" href="./assets/css/style.css">
+<body>
+    <header class="cabecalho"> 
+        <div class="container">
+            <div class="cabecalho__logo"></div>
+            <nav class="menu">
+                    <input type="checkbox" id="menu" class="menu__botao">
+                    <label for="menu">
+                        <span class="menu__itens--mobile"> </span>
+                    </label>
+                    <ul class="menu__itens container">
+                        <li class="menu__itens item"><a href="#" id="home">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+        <form class="menu__buscar container_1">
+            <input class="menu__buscar pesquisar" type="text" placeholder="Digite o produto">
+            <button type="submit" class="menu__buscar botao">Buscar</button>
+        </form>
+    </header>
+
+    <main class="conteudo admin">
+        <section class="categorias">
+            <h3 class="conteudo__titulos">Busque por categoria:</h3>
+            <div class="categorias__imagens">
+                <a href="#">
+                    <figure class="categorias__card">
+                        <img src="./assets/img/Mobile/Categorias/Categoria camiseta.png" alt="">
+                        <img src="./assets/img/Tablet/Categorias/Categoria camiseta.png" alt="">
+                        <img src="./assets/img/Desktop/Categorias/Categoria camiseta.png" alt="">
+                    <figcaption class="categorias__legenda">Camisetas</figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="categorias__card">
+                        <img src="./assets/img/Mobile/Categorias/Categoria Bolsas.png" alt="">
+                        <img src="./assets/img/Tablet/Categorias/Categoria Bolsas.png" alt="">
+                        <img src="./assets/img/Desktop/Categorias/Categoria Bolsa.png" alt="">
+                    <figcaption class="categorias__legenda">Bolsas</figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="categorias__card">
+                        <img src="./assets/img/Mobile/Categorias/Categoria calçados.png" alt="">
+                        <img src="./assets/img/Tablet/Categorias/Categoria calçados.png" alt="">
+                        <img src="./assets/img/Desktop/Categorias/Categoria Calçados.png" alt="">
+                    <figcaption class="categorias__legenda">Calçados</figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="categorias__card">
+                        <img src="./assets/img/Mobile/Categorias/Categoria calças.png" alt="">
+                        <img src="./assets/img/Tablet/Categorias/Categoria calças.png" alt="">
+                        <img src="./assets/img/Desktop/Categorias/Categoria calça.png" alt="">
+                    <figcaption class="categorias__legenda">Calças</figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="categorias__card">
+                        <img src="./assets/img/Mobile/Categorias/Categoria Casacos.png" alt="">
+                        <img src="./assets/img/Tablet/Categorias/Categoria casacos.png" alt="">
+                        <img src="./assets/img/Desktop/Categorias/Categoria casacos.png" alt="">
+                    <figcaption class="categorias__legenda">Casacos</figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="categorias__card">
+                        <img src="./assets/img/Mobile/Categorias/Categoria óculos.png" alt="">
+                        <img src="./assets/img/Tablet/Categorias/Categoria óculos.png" alt="">
+                        <img src="./assets/img/Desktop/Categorias/Categoria óculos.png" alt="">
+                    <figcaption class="categorias__legenda">Óculos</figcaption>
+                    </figure>
+                </a>
+            </div>
+        </section>
+        <section class="produtos">
+            <h2 class="conteudo__titulos">Produtos cadastrados no sistema</h2>
+                <div class="produtos__grade--admin">
+                    <table class="tabela">
+                        <thead>
+                            <tr>
+                                <th class="tabela__coluna">Nome</th>
+                                <th class="tabela__coluna">Preço</th>
+                                <th class="tabela__coluna">Tamanhos</th>
+                                <th class="tabela__coluna">Cores</th>
+                                <th class="tabela__coluna">Loja</th>
+                                <th class="tabela__coluna">Categoria</th>
+                                <th class="tabela__coluna">Foto</th>
+                                <th class="tabela__coluna">Descrição</th>
+
+                                <th class="tabela__coluna tabela__alinhamento--direita"><a href="./cadastra_cliente.html" class="botao-simples botao-simples--adicionar">Novo Produto</a></th>
+                            </tr>
+                        </thead>
+                        <tbody data-tabela>
+                            <!-- <td class="td" data-td>${nome}</td>
+                            <td>${email}</td>
+                            <td>
+                                <ul class="tabela__botoes-controle">
+                                    <li><a href="../telas/edita_cliente.html" class="botao-simples botao-simples--editar">Editar</a></li>
+                                    <li><button class="botao-simples botao-simples--excluir" type="button">Excluir</button></li>
+                                </ul>
+                            </td> -->
+                        </tbody>
+                    </table>
+                </div>
+        </section>
+    </main>
+
+
+    <footer class="rodape">
+        <p>2023 © Desenvolvido por Alan Abilio | Projeto fictício sem fins comerciais.</p>
+    </footer>
+<script src="./js/admin/app-Admin.js" type="module"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>  
+</body>
+</html>

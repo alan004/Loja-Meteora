@@ -7,6 +7,8 @@
 @import url(./botao.css);
 @import url(./separador.css);
 
+@import url(./admin/tabela.css);
+
 @import url(./cabecalho.css);
 @import url(./cabecalho/cabecalho__logo.css);
 @import url(./cabecalho/menu/menu__botao.css);

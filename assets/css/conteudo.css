@@ -1,3 +1,7 @@
 .conteudo{
     font-family: var(--inter);
 }
+
+.conteudo.admin figure img{
+    display: none;
+}
