@@ -31,8 +31,8 @@ const criarNovoProduto = (id, nome, descricao, preco, imgDesktop, loja, cores, t
     <td>${descricao}</td>
     <td>
         <ul class="tabela__botoes-controle">
-            <li><a href="../telas/edita_cliente.html" class="botao-simples botao-simples--editar">Editar</a></li>
-            <li><button class="botao-simples botao-simples--excluir" type="button">Excluir</button></li>
+            <li><a href="./admin/edita_produto.html" class="botao">Editar</a></li>
+            <li><button class="botao deletar" type="button">Excluir</button></li>
         </ul>
     </td>
         

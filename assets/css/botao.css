@@ -4,4 +4,14 @@
     text-decoration: none;
     padding: 9px 1rem;
     border: none;
+    transition: .25s;
+}
+
+.botao.adicionar:hover{
+    background-color: #20ca3f;
+    
+}
+
+.botao.deletar:hover{
+    background-color: #e73939;
 }
