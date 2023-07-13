@@ -49,6 +49,5 @@ export function exibirProdutos(produtos){
         const lojaVenda = e.loja.charAt(0).toUpperCase() + e.loja.slice(1)
         const novoProduto = criarNovoProduto(e.id, e.nome, e.descricao, e.preco, e.imgDesktop, lojaVenda, e.cores, e.tamanhos, e.categoria)
         gradeProdutos.appendChild(novoProduto)
-        console.log(novoProduto)
     })
 }
