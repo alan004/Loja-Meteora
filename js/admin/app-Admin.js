@@ -1,21 +1,20 @@
 import { clientService } from "../client-service.js";
-import { exibirProdutos } from "./listarProdutosAdm-controller.js";
-// import { filtrarCategoria } from "../filtrarProdutos-controller.js";
-// import { buscarProduto } from "../produtos/buscarProduto-controller.js";
+import { admExibirProdutos } from "./listarProdutosAdm-controller.js";
+import { admBuscarProduto } from "./admBuscarFiltrarProdutos-controller.js";
 
 renderProdutosCadastrados()
 
 const btnHome = document.getElementById('home')
 btnHome.addEventListener('click', async () => {
     const produtos = await clientService.listarProdutos()
-    exibirProdutos(produtos)
+    admExibirProdutos(produtos)
 })
 
 
 export async function renderProdutosCadastrados(){
     try {
         const produtos = await clientService.listarProdutos()
-        exibirProdutos(produtos)
+        admExibirProdutos(produtos)
     }
     catch(erro){
         console.log(erro)
