@@ -21,6 +21,41 @@ const deletarProdutos = (id) => {
     })
 }
 
+const detalharProduto = (id)=> {
+    return fetch(enderecoAPI + `Produtos/${id}`)
+    .then(resposta =>{
+        if(resposta.ok){
+        return resposta.json()
+        }
+        throw new Error('Nao foi possível detalhar o cliente')
+    })
+}
+
+const editarProduto = (id, nome, descricao, preco, tamanhos, cores, loja, categoria,img) =>{
+    return fetch(enderecoAPI + `Produtos/${id}`,{
+        method: 'PATCH',
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(
+            {nome:nome,
+             descricao:descricao,
+             preco:preco,
+             tamanhos:tamanhos,
+             cores:cores,
+             loja:loja,
+             categoria:categoria,
+             imgDesktop:img
+            }
+        )})
+        .then((e) => {
+            if(e.ok){
+                return e.body
+            }
+            throw new Error ('Não foi possível editar o email')
+        })
+}
+
 const adicionarEmail = (email) =>{
     return fetch(enderecoAPI + `EmailsLista`,{
         method: 'POST',
@@ -41,5 +76,7 @@ const adicionarEmail = (email) =>{
 export const clientService = {
     listarProdutos,
     adicionarEmail,
-    deletarProdutos
+    deletarProdutos,
+    detalharProduto,
+    editarProduto
 }

@@ -28,14 +28,14 @@
             <h2 class="conteudo__titulos">Editar produto:</h2>
                 <div class="produtos__grade--admin editar">
                     <form class="formulario__produto">
-                        <label for="nome">Nome</label><input id="nome" type="text">
-                        <label for="descricao">Descrição</label><textarea id="descricao" type="text"></textarea>
-                        <label for="preco">Preço</label><input id="preco" type="text">
-                        <label for="tamanhos">Tamanhos</label><input id="tamanhos" type="text">
-                        <label for="cores">Cores</label><input id="cores" type="text">
-                        <label for="loja">Loja</label><input id="loja" type="text">
+                        <label for="nome">Nome</label><input id="nome" type="text" data-nome>
+                        <label for="descricao">Descrição</label><textarea id="descricao" type="text" data-descricao></textarea>
+                        <label for="preco">Preço</label><input id="preco" type="text" data-preco>
+                        <label for="tamanhos">Tamanhos</label><input id="tamanhos" type="text" data-tamanhos>
+                        <label for="cores">Cores</label><input id="cores" type="text" data-cores>
+                        <label for="loja">Loja</label><input id="loja" type="text" data-loja>
                         <label for="categorias">Categoria</label>
-                            <select name="categorias" id="categorias">
+                            <select name="categorias" id="categorias" data-categoria>
                                 <option value="" selected disabled>Selecione uma opção</option>
                                 <option value="Camisetas">Camisetas</option>
                                 <option value="Calças">Calças</option>
@@ -44,7 +44,7 @@
                                 <option value="Óculos">Óculos</option>
                                 <option value="Bolsas">Bolsas</option>
                             </select>
-                        <label for="img">Imagem</label><input class="form__img" type="file">
+                            <label for="Imagem">Imagem</label><input id="imagem" type="text" data-imagem>    
                         <input type="submit" class="botao">
                     </form>
                 </div>
@@ -55,7 +55,7 @@
     <footer class="rodape">
         <p>2023 © Desenvolvido por Alan Abilio | Projeto fictício sem fins comerciais.</p>
     </footer>
-<script src="./js/admin/app-Admin.js" type="module"></script>
+<script src="../js/admin/editarProdutoAdm-controller.js" type="module"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>  
 </body>
 </html>

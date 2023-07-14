@@ -1,8 +1,9 @@
-.produtos__grade--admin.editar{
+.produtos__grade--admin.editar,.produtos__grade--admin.criar {
     margin: 0 20%;
 }
 
 .formulario__produto {
+    font-weight: 500;
     color: var(--branco);
     background-color: var(--cor--formulario);
     text-align: center;
@@ -21,9 +22,13 @@
     width: 60%;
     color: var(--preto); 
     padding: .5rem 1rem; 
+    font-weight: 700;
 } 
 
-.form__img {
-    color: var(--branco);
+.formulario__produto select{
+    width: 66%;
 }
 
+.formulario__produto #imagem{
+    margin-bottom: 1.5rem;
+} 

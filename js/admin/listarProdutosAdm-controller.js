@@ -14,7 +14,7 @@ const criarNovoProduto = (id, nome, descricao, preco, imgDesktop, loja, cores, t
     <td>${descricao}</td>
     <td>
         <ul class="tabela__botoes-controle">
-            <li><a href="./admin/edita_produto.html" class="botao">Editar</a></li>
+            <li><a href="./telas-admin/editar_produto.html?id=${id}" class="botao">Editar</a></li>
             <li><button class="botao deletar" type="button">Excluir</button></li>
         </ul>
     </td>
@@ -41,10 +41,10 @@ tabelaProdutos.addEventListener('click', async (e) => {
 
     if (botaoDeletar) {
         try {
-            const linhaCliente = e.target.closest('[data-id]')
-            let id = linhaCliente.dataset.id
+            const linhaProdutoDeletado = e.target.closest('[data-id]')
+            let id = linhaProdutoDeletado.dataset.id
             await clientService.deletarProdutos(id)
-            linhaCliente.remove()
+            linhaProdutoDeletado.remove()
         }
         catch (erro) {
             console.log(erro)
