@@ -1,7 +1,7 @@
 .tabela {
     width: 100%;
     color: var(--branco);
-    background-color: #32383e;
+    background-color: var(--cor--formulario);
     text-align: center;
     margin-top: 2.25rem;
 }
