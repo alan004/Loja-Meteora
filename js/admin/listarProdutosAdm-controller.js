@@ -35,3 +35,19 @@ export function admExibirProdutos(produtos){
         tabelaProdutos.appendChild(novoProduto)
     })
 }
+
+tabelaProdutos.addEventListener('click', async (e) => {
+    let botaoDeletar = e.target.className === 'botao deletar'
+
+    if (botaoDeletar) {
+        try {
+            const linhaCliente = e.target.closest('[data-id]')
+            let id = linhaCliente.dataset.id
+            await clientService.deletarProdutos(id)
+            linhaCliente.remove()
+        }
+        catch (erro) {
+            console.log(erro)
+        }
+    }
+})

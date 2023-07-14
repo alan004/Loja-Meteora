@@ -11,6 +11,16 @@ const listarProdutos = () => {
     })
 }
 
+const deletarProdutos = (id) => {
+    return fetch(enderecoAPI + `Produtos/${id}`, {
+        method: 'DELETE',
+    }) .then(e => {
+        if(!e.ok) {
+            throw new Error('Nao foi possivel excluir o produto')
+        }
+    })
+}
+
 const adicionarEmail = (email) =>{
     return fetch(enderecoAPI + `EmailsLista`,{
         method: 'POST',
@@ -30,5 +40,6 @@ const adicionarEmail = (email) =>{
 
 export const clientService = {
     listarProdutos,
-    adicionarEmail
+    adicionarEmail,
+    deletarProdutos
 }
