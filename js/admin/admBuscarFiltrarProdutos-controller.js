@@ -11,7 +11,6 @@ export async function admBuscarProduto(){
         const conteudoPesquisado = barraPesquisa.value.toLowerCase()
         const produtos = await clientService.listarProdutos()
         const secaoProdutos = document.querySelector('.produtos')
-        console.log(produtos)
         if (conteudoPesquisado === '' ){
             admExibirProdutos(produtos)
         }
