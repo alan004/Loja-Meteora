@@ -18,7 +18,7 @@
     margin: 1rem 0 .5rem;
 }
 
-.formulario__produto textarea, input, select{
+.formulario__produto>input,.formulario__produto>textarea, .formulario__produto>select{
     width: 60%;
     color: var(--preto); 
     padding: .5rem 1rem; 
