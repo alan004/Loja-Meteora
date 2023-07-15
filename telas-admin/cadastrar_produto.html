@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Produto</title>
+    <link rel="shortcut icon" href="../assets/img/Favicon-64px.png" />
+</head>
+<link rel="stylesheet" href="../assets/css/style.css">
+<body>
+    <header class="cabecalho"> 
+        <div class="container">
+            <div class="cabecalho__logo"></div>
+            <nav class="menu">
+                    <input type="checkbox" id="menu" class="menu__botao">
+                    <label for="menu">
+                        <span class="menu__itens--mobile"> </span>
+                    </label>
+                    <ul class="menu__itens container">
+                        <li class="menu__itens item"><a href="../admin.html">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="conteudo admin">
+        <section class="produtos">
+            <h2 class="conteudo__titulos">Criar produto:</h2>
+                <div class="produtos__grade--admin criar">
+                    <form class="formulario__produto">
+                        <label for="nome">Nome</label><input id="nome" type="text" data-nome>
+                        <label for="descricao">Descrição</label><textarea id="descricao" type="text" data-descricao></textarea>
+                        <label for="preco">Preço</label><input id="preco" type="text" data-preco>
+                        <label for="tamanhos">Tamanhos</label><input id="tamanhos" type="text" data-tamanhos>
+                        <label for="cores">Cores</label><input id="cores" type="text" data-cores>
+                        <label for="loja">Loja</label><input id="loja" type="text" data-loja>
+                        <label for="categorias">Categoria</label>
+                            <select name="categorias" id="categorias" data-categoria>
+                                <option value="" selected disabled>Selecione uma opção</option>
+                                <option value="Camisetas">Camisetas</option>
+                                <option value="Calças">Calças</option>
+                                <option value="Calçados">Calçados</option>
+                                <option value="Casacos">Casacos</option>
+                                <option value="Óculos">Óculos</option>
+                                <option value="Bolsas">Bolsas</option>
+                            </select>
+                            <label for="Imagem">Caminho da imagem</label><input id="imagem" type="text" data-imagem>    
+                        <input type="submit" class="botao">
+                    </form>
+                </div>
+        </section>
+    </main>
+
+
+    <footer class="rodape">
+        <p>2023 © Desenvolvido por Alan Abilio | Projeto fictício sem fins comerciais.</p>
+    </footer>
+<script src="../js/admin/criarProdutoAdm-controller.js" type="module"></script>
+</body>
+</html>

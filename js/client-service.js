@@ -21,6 +21,31 @@ const deletarProdutos = (id) => {
     })
 }
 
+const criarProduto = (nome, descricao, preco, tamanhos, cores, loja, categoria,img) => {
+  return fetch(enderecoAPI + `Produtos`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+             nome:nome,
+             descricao:descricao,
+             preco:preco,
+             tamanhos:tamanhos,
+             cores:cores,
+             loja:loja,
+             categoria:categoria,
+             imgDesktop:img,
+             imgTablet:img,
+             imgMobile:img, }),
+  }).then((e) => {
+    if (e.ok) {
+      return e.body;
+    }
+    throw new Error("Não foi possível cadastrar o email");
+  });
+};
+
 const detalharProduto = (id)=> {
     return fetch(enderecoAPI + `Produtos/${id}`)
     .then(resposta =>{
@@ -76,6 +101,7 @@ const adicionarEmail = (email) =>{
 export const clientService = {
     listarProdutos,
     adicionarEmail,
+    criarProduto,
     deletarProdutos,
     detalharProduto,
     editarProduto
