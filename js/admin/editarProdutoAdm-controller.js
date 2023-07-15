@@ -32,7 +32,9 @@ async function exibirProduto() {
     formulario.addEventListener('submit', async(e)=>{
         e.preventDefault()
         try {
-            await clientService.editarProduto(id, inputNome.value, inputDescricao.value, inputPreco.value,inputTamanhos.value, inputCores.value, inputLoja.value, inputCategoria.value, inputImagem.value)
+            const tamanhos = inputTamanhos.value.split(',').map((item) => item.trim())
+            const cores = inputCores.value.split(',').map((item) => item.trim())
+            await clientService.editarProduto(id, inputNome.value, inputDescricao.value, inputPreco.value, tamanhos, cores, inputLoja.value, inputCategoria.value, inputImagem.value)
             window.location.href = "../admin.html"
         } 
         catch(erro){

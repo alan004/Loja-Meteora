@@ -14,7 +14,9 @@ async function criarProduto(){
     formulario.addEventListener('submit', async(e) => {
         e.preventDefault
         try{
-        await clientService.criarProduto(inputNome.value, inputDescricao.value, inputPreco.value, inputTamanhos.value, inputCores.value, inputLoja.value, inputCategoria.value, inputImagem.value)
+            const tamanhos = inputTamanhos.value.split(',').map((item) => item.trim())
+            const cores = inputCores.value.split(',').map((item) => item.trim())
+        await clientService.criarProduto(inputNome.value, inputDescricao.value, inputPreco.value, tamanhos, cores, inputLoja.value, inputCategoria.value, inputImagem.value)
     }
     catch(erro){
         console.log(erro)

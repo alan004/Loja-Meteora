@@ -5,8 +5,19 @@
       "nome": "Camiseta Conforto",
       "descricao": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
       "preco": "R$ 70,00",
-      "tamanhos": "p,pp,m,g,gg",
-      "cores": "azul,verde,amarela,roxa",
+      "tamanhos": [
+        "p",
+        "pp",
+        "m",
+        "g",
+        "gg"
+      ],
+      "cores": [
+        "azul",
+        "verde",
+        "amarela",
+        "roxa"
+      ],
       "loja": "Riachuelo",
       "categoria": "Camisetas",
       "imgMobile": "./assets/img/Mobile/Imagens cards/Card camiseta.png",
@@ -26,7 +37,8 @@
       ],
       "cores": [
         "vermelho",
-        "bege"
+        "bege",
+        "preto"
       ],
       "loja": "Riachuelo",
       "categoria": "Calças",
@@ -103,8 +115,7 @@
         "p",
         "pp",
         "m",
-        "g",
-        "gg"
+        "g"
       ],
       "cores": [
         "marrom",
