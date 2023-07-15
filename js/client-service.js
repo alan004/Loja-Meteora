@@ -1,4 +1,4 @@
-const enderecoAPI = 'http://localhost:3000/'
+const enderecoAPI = 'https://my-json-server.typicode.com/alan004/loja-meteora/'
 
 const listarProdutos = () => {
     return fetch(enderecoAPI + `Produtos`)
