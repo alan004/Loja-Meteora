@@ -17,12 +17,10 @@ function obterCoresTamanhos (cores, tamanhos) {
     return { coresProduto, tamanhosProduto }
 }
 
-const criarNovoProduto = (id, nome, descricao, preco, imgMobile, imgTablet, imgDesktop, loja, cores, tamanhos) => {
+const criarNovoProduto = (id, nome, descricao, preco, imgDesktop, loja, cores, tamanhos) => {
     const cardProduto = document.createElement('div')
     cardProduto.classList.add("produtos__card")
     const conteudoProduto = `
-        <img src="${imgMobile}" alt="" class="produto__card__foto">
-        <img src="${imgTablet}"" alt="" class="produto__card__foto">
         <img src="${imgDesktop}"" alt="" class="produto__card__foto">
         <div class="produtos__card__detalhes">
             <p class="produto__card__detalhes--nome">${nome}</p>
@@ -39,8 +37,7 @@ const criarNovoProduto = (id, nome, descricao, preco, imgMobile, imgTablet, imgD
     </div>
 <div class="modal__descricao produto">
     <figure class="produto__modal--foto">
-        <img src="${imgMobile}" alt="" class="">
-        <img src="${imgTablet}" alt="" class="">
+
         <img src="${imgDesktop}" alt="" class="">
     </figure>
     <div class="produtos__card__detalhes produtos__modal">
@@ -77,7 +74,7 @@ export function exibirProdutos(produtos){
         gradeProdutos.innerHTML = ''
         produtos.forEach(e => {
         const lojaVenda = e.loja.charAt(0).toUpperCase() + e.loja.slice(1)
-        const novoProduto = criarNovoProduto(e.id, e.nome, e.descricao, e.preco, e.imgMobile, e.imgTablet, e.imgDesktop, lojaVenda, e.cores, e.tamanhos)
+        const novoProduto = criarNovoProduto(e.id, e.nome, e.descricao, e.preco, e.imgDesktop, lojaVenda, e.cores, e.tamanhos)
         gradeProdutos.appendChild(novoProduto)
         exibirModalProduto(novoProduto)
     })

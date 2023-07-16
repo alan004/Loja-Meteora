@@ -35,9 +35,7 @@ const criarProduto = (nome, descricao, preco, tamanhos, cores, loja, categoria,i
              cores:cores,
              loja:loja,
              categoria:categoria,
-             imgDesktop:img,
-             imgTablet:img,
-             imgMobile:img, }),
+             imgDesktop:img }),
   }).then((e) => {
     if (e.ok) {
       return e.body;

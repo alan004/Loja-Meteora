@@ -20,8 +20,6 @@
       ],
       "loja": "Riachuelo",
       "categoria": "Camisetas",
-      "imgMobile": "./assets/img/Mobile/Imagens cards/Card camiseta.png",
-      "imgTablet": "./assets/img/Tablet/Imagens Cards/camiseta.png",
       "imgDesktop": "./assets/img/Desktop/Imagens Cards/Camiseta.png"
     },
     {
@@ -42,8 +40,6 @@
       ],
       "loja": "Riachuelo",
       "categoria": "Calças",
-      "imgMobile": "./assets/img/Mobile/Imagens cards/Card calça.png",
-      "imgTablet": "./assets/img/Tablet/Imagens Cards/calça.png",
       "imgDesktop": "./assets/img/Desktop/Imagens Cards/Calça.png"
     },
     {
@@ -63,8 +59,6 @@
       ],
       "loja": "Dafiti",
       "categoria": "Calçados",
-      "imgMobile": "./assets/img/Mobile/Imagens cards/Card tenis.png",
-      "imgTablet": "./assets/img/Tablet/Imagens Cards/tenis.png",
       "imgDesktop": "./assets/img/Desktop/Imagens Cards/Tenis.png"
     },
     {
@@ -82,8 +76,6 @@
       ],
       "loja": "Riachuelo",
       "categoria": "Casacos",
-      "imgMobile": "./assets/img/Mobile/Imagens cards/Card jaqueta jeans.png",
-      "imgTablet": "./assets/img/Tablet/Imagens Cards/jaqueta jeans.png",
       "imgDesktop": "./assets/img/Desktop/Imagens Cards/Jaqueta.png"
     },
     {
@@ -102,8 +94,6 @@
       ],
       "loja": "Óticas Diniz",
       "categoria": "Óculos",
-      "imgMobile": "./assets/img/Mobile/Imagens cards/Cards óculos.png",
-      "imgTablet": "./assets/img/Tablet/Imagens Cards/óculos.png",
       "imgDesktop": "./assets/img/Desktop/Imagens Cards/óculos.png"
     },
     {
@@ -124,8 +114,6 @@
       ],
       "loja": "kipling",
       "categoria": "Bolsas",
-      "imgMobile": "./assets/img/Mobile/Imagens cards/Card bolsa.png",
-      "imgTablet": "./assets/img/Tablet/Imagens Cards/bolsa.png",
       "imgDesktop": "./assets/img/Desktop/Imagens Cards/Bolsa.png"
     }
   ],
