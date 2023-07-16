@@ -1,36 +1,7 @@
 .produto__modal--foto{
-    display: none;
     align-self: stretch;
 }
 
 .produto__modal--foto>img{
     width: 100%;
-}
-
-
-@media (width < 768px) {
-    .produto__modal--foto:first-child{
-        display: block;
-    }
-}
-
-@media (width >= 768px) {
-    .produto__modal--foto:first-child{
-        display: none;
-    }
-    .produto__modal--foto:nth-child(1){
-        display: block;
-    }
-}
-
-@media (width >= 1024px) {
-    .produto__modal--foto:first-child{
-        display: none;
-    }
-     .produto__modal--foto:nth-child(1){
-        display: none;
-    } 
-    .produto__modal--foto:nth-child(1){
-        display: block;
-    }
 } 
