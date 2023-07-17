@@ -1,5 +1,21 @@
 .produtos__grade--admin.editar,.produtos__grade--admin.criar {
-    margin: 0 20%;
+        margin: 0 0
+    }
+
+.formulario__produto>input,.formulario__produto>textarea, .formulario__produto>select{
+        width: 80%;
+        color: var(--preto); 
+        padding: .5rem 1rem; 
+        font-weight: 700;
+    }
+
+@media (width >= 768px) {
+    .produtos__grade--admin.editar,.produtos__grade--admin.criar {
+        margin: 0 15%
+    }
+    .formulario__produto>input,.formulario__produto>textarea, .formulario__produto>select{
+        width: 70%;
+    }
 }
 
 .formulario__produto {
@@ -17,13 +33,6 @@
 .formulario__produto label{
     margin: 1rem 0 .5rem;
 }
-
-.formulario__produto>input,.formulario__produto>textarea, .formulario__produto>select{
-    width: 60%;
-    color: var(--preto); 
-    padding: .5rem 1rem; 
-    font-weight: 700;
-} 
 
 .formulario__produto select{
     width: 66%;

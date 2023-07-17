@@ -4,6 +4,10 @@
     gap: 30px;
 }
 
+.produtos__grade--admin:has(.tabela){
+    overflow-x:auto
+}
+
 @media screen and (min-width: 375px){
     .produtos__grade{
         grid-template-columns: repeat(1, 1fr);
