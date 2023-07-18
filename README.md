@@ -2,7 +2,7 @@
 
 Mais um challenge de Front-End concluído!! Esse foi bem divertido de criar e como terminei antes da hora, resolvi incluir também um painel de gerenciamento da loja para edição dos produtos.
 
-> Caso queira apenas dar uma olhada, utilize a página [Loja Meteora no Github Pages](https://alan004.github.io/Loja-Meteora/). Ah, como a página administrativa não estava no escopo inicial do projeto, ela ainda não está responsiva no celular, ok? \
+> Caso queira apenas dar uma olhada, utilize a página [Loja Meteora no Github Pages](https://alan004.github.io/Loja-Meteora/). \
 > Se quiser contribuir, siga as instruções em [Como rodar o projeto](#como-rodar-o-projeto). Vou ficar feliz com as sugestões!
 
 | :placard: Vitrine.Dev |     |
@@ -18,7 +18,7 @@ Mais um challenge de Front-End concluído!! Esse foi bem divertido de criar e co
 
 ## Detalhes do projeto
 
-> Status do Projeto: Versão 1.0 entregue  🫡  
+> Status do Projeto: Versão 1.0.1 entregue  🫡  
 
 A estrutura do projeto é feita em HTML e CSS, sem a utilização de framework. Diria que da estrutura, as partes mais legais de customizar foram a grade de produtos e o modal "ver mais", que foram bem satisfatórios de olhar quando concluídos. 
 Depois de finalizar o projeto base, resolvi criar também uma página para administração do site, fazendo o CRUD completo.
@@ -30,7 +30,7 @@ Como disse anteriormente, além da entrega do projeto base, inseri um painel adm
 Para tratar o primeiro ponto, foi preciso "quebrar" o valor lido do formulário e ler os valores separados pela vígula. Já para tratar do segundo, utilizei o jquery-maskmoney do [Diego Plentz](https://github.com/plentz/jquery-maskmoney), assim o valor estará sempre com o "R$" no início.
 
 ### Funções disponíveis
-- Responsividade na tela inicial
+- Responsividade;
 - Exibição dinâmica de produtos;
 - Filtro por categoria;
 - Botão pesquisar;
