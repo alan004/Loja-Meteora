@@ -2,7 +2,7 @@
 
 Mais um challenge de Front-End concluído!! Esse foi bem divertido de criar e como terminei antes da hora, resolvi incluir também um painel de gerenciamento da loja para edição dos produtos.
 
-> Caso queira apenas dar uma olhada, utilize a página [Loja Meteora no Github Pages](https://alan004.github.io/Loja-Meteora/). \
+> Caso queira apenas dar uma olhada, utilize a página [Loja Meteora no Github Pages](https://alan004.github.io/Loja-Meteora/) ou assista a esse [vídeo demonstrativo](https://www.youtube.com/watch?v=5mLplxZgx0s). \
 > Se quiser contribuir, siga as instruções em [Como rodar o projeto](#como-rodar-o-projeto). Vou ficar feliz com as sugestões!
 
 | :placard: Vitrine.Dev |     |
